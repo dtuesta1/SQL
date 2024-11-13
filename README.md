@@ -2,6 +2,16 @@
 ### Creating restaurants and reviews table 
 [practice restaurant data](https://vscode.dev/github/dbdesign-students-spring2024/4-sql-crud-dtuesta1/blob/main/data/restaurants.csv)
 
+- **Rest_id**(_PRIMARY KEY_) : An integer holds the unique identifier of each restaurant
+- **Category**(_TEXT_) : Genre of food (Italian, Chinese, American, Mexican, Japanese, Korean, Thai, French)
+- **Name**(_TEXT_) : Name of the restaurant (Ruby's, Konbon, Carbone, Torrisi, Raku, Ippudo, Golden Wuish, Up Thai, ABC Kitchen, Gramercy Tavern, Dudley's, Au Cheval, Take 31, Five Guys, Palma, Mareluna, Sadelle's, Nemesis, Cha Long, Che Li, Tatiana, Mamo, The Modern, Sonnyboy, Fish Cheeks, Chipotle, Dig)
+- **Price_tier**(_TEXT_) : Price tier of each restaurant (Cheap, Medium, or Expensive)
+- **Neighborhood**(_TEXT_) : A particular NYC neighborhood (Financial District, Tribeca, Soho, Greenwich Village, East Village, Lower East Side, Chinatown, Little Italy, Chelsea, Midtown East, Hell's Kitchen, Upper East Side, Upper West Side, Gramercy)
+- **Open_time**(_TEXT_) : The opening hours for each restaurant in 24 hour format 
+- **Close_time**(_TEXT_) : The closing hours for each restaurant in 24 hour format 
+- **Avg_rating**(_INTEGER_) : An integer (1 - 5) represents the average rating for each restaurant 
+- **Good_for_kids**(_BOOLEAN_) : Whether the restaurant is good for kids (True or False)
+
 ``` sql
 CREATE TABLE restaurants (
 	rest_id INTEGER PRIMARY KEY,
